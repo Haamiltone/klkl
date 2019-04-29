@@ -1,0 +1,63 @@
+#include <iostream>
+#include <windows.h>
+
+using namespace std;
+float a,b;
+int wybor;
+bool powrot;
+int main()
+{
+   for(;;)
+   {
+
+    wybor=0;
+    cout<<"Podaj dwie liczby"<<endl;
+    cin>>a;
+    cin>>b;
+    for(;wybor!=5;)
+{
+
+
+
+    cout<<endl<<"Menu"<<endl;
+    cout<<"---------------"<<endl;
+    cout<<"1.Dodawanie"<<endl;
+    cout<<"2.Odejmowanie"<<endl;
+    cout<<"3.Mnozenie"<<endl;
+    cout<<"4.Dzielenie"<<endl;
+    cout<<"5.Wybierz inne liczby"<<endl;
+    cout<<"6.Koniec"<<endl;
+    cin>>wybor;
+    system("cls");
+switch(wybor)
+{
+    case 1:
+    cout<<a+b<<endl;
+    break;
+
+    case 2:
+        cout<<a-b<<endl;
+    break;
+
+    case 3:
+        cout<<a*b<<endl;
+    break;
+
+    case 4:
+        cout<<a/b<<endl;
+    break;
+    case 5:
+        powrot=true;
+        break;
+    case 6:
+        exit(0);
+
+    default:
+        cout<<"Nie ma takiej opcji"<<endl;
+        break;
+
+}
+}
+   }
+    return 0;
+}
