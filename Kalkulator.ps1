@@ -229,10 +229,19 @@ $Button_mini.Add_click({
 $Check_Fee                       = New-Object system.Windows.Forms.CheckBox
 $Check_Fee.text                  = "Coach Fee"
 $Check_Fee.AutoSize              = $false
-$Check_Fee.width                 = 100
+$Check_Fee.width                 = 200
 $Check_Fee.height                = 20
 $Check_Fee.location              = New-Object System.Drawing.Point(218,281)
 $Check_Fee.Font                  = 'Microsoft Sans Serif,10'
+
+
+$Check_logs                       = New-Object system.Windows.Forms.CheckBox
+$Check_logs.text                  = "Zapisz wynik"
+$Check_logs.AutoSize              = $false
+$Check_logs.width                 = 300
+$Check_logs.height                = 20
+$Check_logs.location              = New-Object System.Drawing.Point(218,301)
+$Check_logs.Font                  = 'Microsoft Sans Serif,10'
 
 #----------------------------------------------------------------------
 #end check
@@ -241,7 +250,7 @@ $Check_Fee.Font                  = 'Microsoft Sans Serif,10'
 
 #happy ending
 #----------------------------------------------------------------------
-$Form.controls.AddRange(@($box_Poke,$box_profile,$box_msg,$box_training,$box_mini,$Check_Fee,$Label_Poke,$Button_oblicz,$Button_Poke,$Button_training,$Button_msg,$Button_Profile,$Button_mini,$Label_Profile,$Label_msg,$Label_training,$Label_Min))
+$Form.controls.AddRange(@($box_Poke,$box_profile,$box_msg,$box_training,$box_mini,$Check_Fee,$Label_Poke,$Button_oblicz,$Button_Poke,$Button_training,$Button_msg,$Button_Profile,$Button_mini,$Label_Profile,$Label_msg,$Label_training,$Label_Min,$Check_logs))
 #Show form  
 $Form.Add_shown({$Form.Activate()})  
 [void] $Form.ShowDialog()
