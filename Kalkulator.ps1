@@ -131,6 +131,17 @@ $Button_oblicz.location          = New-Object System.Drawing.Point(216,327)
 $Button_oblicz.Font              = 'Microsoft Sans Serif,10'
 $Button_oblicz.add_click({
 
+    $fee_state = $Check_Fee.CheckState
+    If($fee_state -eq "checked")
+    {
+    $value_fee = 50
+    }
+     
+    if($fee_state -eq "unchecked")
+    {
+    $value_fee = 0
+    }
+
     #Calculating
     #--------------------------------------------------------------------
     [float]$suma_poke      =[float]$box_poke.text * $value_poke
@@ -138,7 +149,7 @@ $Button_oblicz.add_click({
     [float]$suma_msg       =[float]$box_msg.text * $vaule_msg
     [float]$suma_training  =[float]$box_training.text * $value_training
     [float]$suma_mini      =[float]$box_mini.text * $value_mini
-    [float]$suma_total     = $suma_poke + $suma_profile + $suma_msg + $suma_training + $suma_mini + $suma_fee
+    [float]$suma_total     = $suma_poke + $suma_profile + $suma_msg + $suma_training + $suma_mini + $value_fee
     [float]$suma_total_pln = $suma_total * 4.25
     #--------------------------------------------------------------------
 
