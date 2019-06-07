@@ -206,4 +206,4 @@ $Check_Fee.Font                  = 'Microsoft Sans Serif,10'
 $Form.controls.AddRange(@($box_Poke,$box_profile,$box_msg,$box_training,$mini,$Check_Fee,$Label_Poke,$Button_oblicz,$Button_Poke,$Button_trainings,$Button_msg,$Button_Profile,$Button_mini,$Label_Profile,$Label_msg,$Label_trainings,$Label_Min))
 #Show form  
 $Form.Add_shown({$Form.Activate()})  
-[void] $Form.ShowDialog()
+[void] $Form.ShowDialog() 
