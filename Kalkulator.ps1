@@ -164,6 +164,11 @@ $Button_Poke.width               = 139
 $Button_Poke.height              = 30
 $Button_Poke.location            = New-Object System.Drawing.Point(270,64)
 $Button_Poke.Font                = 'Microsoft Sans Serif,10'
+$Button_Poke.Add_click({
+
+    $script:value_poke = [Microsoft.VisualBasic.Interaction]::InputBox("Wprowadz wartosc Poke w euro", "Wartosc Poke")
+
+})
 
 $Button_training                = New-Object system.Windows.Forms.Button
 $Button_training.text           = "Zmien"
@@ -171,6 +176,11 @@ $Button_training.width          = 139
 $Button_training.height         = 30
 $Button_training.location       = New-Object System.Drawing.Point(270,180)
 $Button_training.Font           = 'Microsoft Sans Serif,10'
+$Button_training.Add_click({
+
+    $script:value_training = [Microsoft.VisualBasic.Interaction]::InputBox("Wprowadz wartosc Treningu w euro", "Wartosc Treningu")
+
+})
 
 $Button_msg                      = New-Object system.Windows.Forms.Button
 $Button_msg.text                 = "Zmien"
@@ -178,6 +188,11 @@ $Button_msg.width                = 139
 $Button_msg.height               = 30
 $Button_msg.location             = New-Object System.Drawing.Point(270,140)
 $Button_msg.Font                 = 'Microsoft Sans Serif,10'
+$Button_msg.Add_click({
+
+    $script:value_msg = [Microsoft.VisualBasic.Interaction]::InputBox("Wprowadz wartosc Wiadomosci w euro", "Wartosc Wiadomosci")
+
+})
 
 $Button_Profile                  = New-Object system.Windows.Forms.Button
 $Button_Profile.text             = "Zmien"
@@ -185,6 +200,11 @@ $Button_Profile.width            = 139
 $Button_Profile.height           = 30
 $Button_Profile.location         = New-Object System.Drawing.Point(270,104)
 $Button_Profile.Font             = 'Microsoft Sans Serif,10'
+$Button_Profile.Add_click({
+
+    $script:value_profile = [Microsoft.VisualBasic.Interaction]::InputBox("Wprowadz wartosc Profilu w euro", "Wartosc Profilu")
+
+})
 
 $Button_mini                     = New-Object system.Windows.Forms.Button
 $Button_mini.text                = "Zmien"
@@ -192,6 +212,11 @@ $Button_mini.width               = 139
 $Button_mini.height              = 30
 $Button_mini.location            = New-Object System.Drawing.Point(270,219)
 $Button_mini.Font                = 'Microsoft Sans Serif,10'
+$Button_mini.Add_click({
+
+    $script:value_mini = [Microsoft.VisualBasic.Interaction]::InputBox("Wprowadz wartosc Minima w euro", "Wartosc Minima")
+
+})
 
 #----------------------------------------------------------------------
 #End Buttons
