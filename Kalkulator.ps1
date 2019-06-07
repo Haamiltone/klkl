@@ -71,6 +71,14 @@ $Label_Min.height                = 10
 $Label_Min.location              = New-Object System.Drawing.Point(145,224)
 $Label_Min.Font                  = 'Microsoft Sans Serif,10'
 
+$Label_creators                       = New-Object system.Windows.Forms.Label
+$Label_creators.text                  = "Creators: Hami + Marek <3"
+$Label_creators.AutoSize              = $true
+$Label_creators.width                 = 300
+$Label_creators.height                = 10
+$Label_creators.location              = New-Object System.Drawing.Point(8,8)
+$Label_creators.Font                  = 'Microsoft Sans Serif,10'
+
 #----------------------------------------------------------------------
 #End Labels
 
@@ -255,7 +263,7 @@ $Check_logs.Font                  = 'Microsoft Sans Serif,10'
 
 #happy ending
 #----------------------------------------------------------------------
-$Form.controls.AddRange(@($box_Poke,$box_profile,$box_msg,$box_training,$box_mini,$Check_Fee,$Label_Poke,$Button_oblicz,$Button_Poke,$Button_training,$Button_msg,$Button_Profile,$Button_mini,$Label_Profile,$Label_msg,$Label_training,$Label_Min,$Check_logs))
+$Form.controls.AddRange(@($box_Poke,$box_profile,$box_msg,$box_training,$box_mini,$Check_Fee,$Label_Poke,$Button_oblicz,$Button_Poke,$Button_training,$Button_msg,$Button_Profile,$Button_mini,$Label_Profile,$Label_msg,$Label_training,$Label_Min,$Check_logs,$Label_creators))
 #Show form  
 $Form.Add_shown({$Form.Activate()})  
 [void] $Form.ShowDialog()
