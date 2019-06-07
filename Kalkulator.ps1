@@ -155,8 +155,13 @@ $Button_oblicz.add_click({
 
     $wshell = New-Object -ComObject Wscript.Shell
     $wshell.Popup("Zarobilas $suma_total EURO. Po kursie 4.25 to $suma_total_pln PLN")
+
+    $log_state = $Check_logs.CheckState
+    If($log_state -eq "checked")
+    {
     $data = Get-Date
     $out = "Zarobilas $suma_total EURO. Po kursie 4.25 to $suma_total_pln PLN, dnia $data" | Out-File -FilePath .\logs.txt -Append
+    }
 
 })
 
