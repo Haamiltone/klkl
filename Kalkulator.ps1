@@ -9,12 +9,10 @@ $Form                            = New-Object system.Windows.Forms.Form
 $Form.ClientSize                 = '537,420'
 $Form.text                       = "Kalkulator v.04"
 $Form.TopMost                    = $false
-$Form.StartPosition = "CenterScreen"
-$Image = [system.drawing.image]::FromFile(".\janpat.jpg")
-
-$Form.BackgroundImage = $Image
-
-$Form.BackgroundImageLayout = "None"
+$Form.StartPosition              = "CenterScreen"
+$Image                           = [system.drawing.image]::FromFile(".\janpat.jpg")
+$Form.BackgroundImage            = $Image
+$Form.BackgroundImageLayout      = "None"
 #----------------------------------------------------------------------
 #End Form
 
@@ -44,6 +42,7 @@ $Label_Poke.width                = 100
 $Label_Poke.height               = 10
 $Label_Poke.location             = New-Object System.Drawing.Point(149,72)
 $Label_Poke.Font                 = 'Microsoft Sans Serif,10'
+$Label_Poke.BackColor            = [System.Drawing.Color]::FromName("Transparent")
 
 $Label_Profile                   = New-Object system.Windows.Forms.Label
 $Label_Profile.text              = "Profile"
@@ -52,6 +51,7 @@ $Label_Profile.width             = 100
 $Label_Profile.height            = 10
 $Label_Profile.location          = New-Object System.Drawing.Point(145,111)
 $Label_Profile.Font              = 'Microsoft Sans Serif,10'
+$Label_Profile.BackColor         = [System.Drawing.Color]::FromName("Transparent")
 
 $Label_msg                       = New-Object system.Windows.Forms.Label
 $Label_msg.text                  = "Wiadomosci"
@@ -60,6 +60,7 @@ $Label_msg.width                 = 100
 $Label_msg.height                = 10
 $Label_msg.location              = New-Object System.Drawing.Point(129,148)
 $Label_msg.Font                  = 'Microsoft Sans Serif,10'
+$Label_msgs.BackColor            = [System.Drawing.Color]::FromName("Transparent")
 
 $Label_training                 = New-Object system.Windows.Forms.Label
 $Label_training.text            = "Treningi"
@@ -68,6 +69,7 @@ $Label_training.width           = 100
 $Label_training.height          = 10
 $Label_training.location        = New-Object System.Drawing.Point(141,185)
 $Label_training.Font            = 'Microsoft Sans Serif,10'
+$Label_training.BackColor       = [System.Drawing.Color]::FromName("Transparent")
 
 $Label_Min                       = New-Object system.Windows.Forms.Label
 $Label_Min.text                  = "Minima"
@@ -76,6 +78,7 @@ $Label_Min.width                 = 100
 $Label_Min.height                = 10
 $Label_Min.location              = New-Object System.Drawing.Point(145,224)
 $Label_Min.Font                  = 'Microsoft Sans Serif,10'
+$Label_Min.BackColor             = [System.Drawing.Color]::FromName("Transparent")
 
 $Label_creators                       = New-Object system.Windows.Forms.Label
 $Label_creators.text                  = "Creators: Hami + Marek <3"
@@ -84,7 +87,7 @@ $Label_creators.width                 = 300
 $Label_creators.height                = 10
 $Label_creators.location              = New-Object System.Drawing.Point(8,8)
 $Label_creators.Font                  = 'Microsoft Sans Serif,10'
-
+$Label_creators.BackColor             = [System.Drawing.Color]::FromName("Transparent")
 #----------------------------------------------------------------------
 #End Labels
 
