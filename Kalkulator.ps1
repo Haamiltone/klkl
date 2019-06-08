@@ -60,7 +60,7 @@ $Label_msg.width                 = 100
 $Label_msg.height                = 10
 $Label_msg.location              = New-Object System.Drawing.Point(129,148)
 $Label_msg.Font                  = 'Microsoft Sans Serif,10'
-$Label_msg.BackColor            = [System.Drawing.Color]::FromName("Transparent")
+$Label_msg.BackColor             = [System.Drawing.Color]::FromName("Transparent")
 
 $Label_training                 = New-Object system.Windows.Forms.Label
 $Label_training.text            = "Treningi"
@@ -255,7 +255,7 @@ $Check_Fee.width                 = 105
 $Check_Fee.height                = 20
 $Check_Fee.location              = New-Object System.Drawing.Point(218,281)
 $Check_Fee.Font                  = 'Microsoft Sans Serif,10'
-
+$Check_Fee.BackColor             = [System.Drawing.Color]::FromName("Transparent")
 
 $Check_logs                       = New-Object system.Windows.Forms.CheckBox
 $Check_logs.text                  = "Zapisz wynik"
@@ -264,7 +264,7 @@ $Check_logs.width                 = 105
 $Check_logs.height                = 20
 $Check_logs.location              = New-Object System.Drawing.Point(218,301)
 $Check_logs.Font                  = 'Microsoft Sans Serif,10'
-
+$Check_logs.BackColor             = [System.Drawing.Color]::FromName("Transparent")
 #----------------------------------------------------------------------
 #end check
 
