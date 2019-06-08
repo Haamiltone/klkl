@@ -9,6 +9,12 @@ $Form                            = New-Object system.Windows.Forms.Form
 $Form.ClientSize                 = '537,420'
 $Form.text                       = "Kalkulator v.04"
 $Form.TopMost                    = $false
+$Form.StartPosition = "CenterScreen"
+$Image = [system.drawing.image]::FromFile(".\janpat.jpg")
+
+$Form.BackgroundImage = $Image
+
+$Form.BackgroundImageLayout = "None"
 #----------------------------------------------------------------------
 #End Form
 
@@ -242,7 +248,7 @@ $Button_mini.Add_click({
 $Check_Fee                       = New-Object system.Windows.Forms.CheckBox
 $Check_Fee.text                  = "Coach Fee"
 $Check_Fee.AutoSize              = $false
-$Check_Fee.width                 = 200
+$Check_Fee.width                 = 105
 $Check_Fee.height                = 20
 $Check_Fee.location              = New-Object System.Drawing.Point(218,281)
 $Check_Fee.Font                  = 'Microsoft Sans Serif,10'
@@ -251,7 +257,7 @@ $Check_Fee.Font                  = 'Microsoft Sans Serif,10'
 $Check_logs                       = New-Object system.Windows.Forms.CheckBox
 $Check_logs.text                  = "Zapisz wynik"
 $Check_logs.AutoSize              = $false
-$Check_logs.width                 = 300
+$Check_logs.width                 = 105
 $Check_logs.height                = 20
 $Check_logs.location              = New-Object System.Drawing.Point(218,301)
 $Check_logs.Font                  = 'Microsoft Sans Serif,10'
