@@ -60,7 +60,7 @@ $Label_msg.width                 = 100
 $Label_msg.height                = 10
 $Label_msg.location              = New-Object System.Drawing.Point(129,148)
 $Label_msg.Font                  = 'Microsoft Sans Serif,10'
-$Label_msgs.BackColor            = [System.Drawing.Color]::FromName("Transparent")
+$Label_msg.BackColor            = [System.Drawing.Color]::FromName("Transparent")
 
 $Label_training                 = New-Object system.Windows.Forms.Label
 $Label_training.text            = "Treningi"
